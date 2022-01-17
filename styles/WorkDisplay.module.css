@@ -1,0 +1,21 @@
+.image > div {
+  position: unset !important;
+}
+
+.image__component {
+  object-fit: cover;
+  width: 10%;
+  position: relative !important;
+  height: unset !important;
+  border-radius: 1rem;
+  scroll-behavior: fixed;
+}
+
+.FeaturedWork__component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 80rem;
+  background-color: chartreuse;
+}

@@ -1,0 +1,22 @@
+.featured__container {
+  height: 100vh;
+  display: flex;
+  background-color: tomato;
+  justify-content: center;
+  align-items: center;
+}
+
+.FeaturedWork__contentBox {
+  display: flex;
+  flex-direction: column;
+  background-color: turquoise;
+  width: 75%;
+  height: 75%;
+}
+
+.featured__container h1 {
+  font-size: 3rem;
+}
+.featured__container p {
+  font-size: 2rem;
+}

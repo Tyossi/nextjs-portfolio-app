@@ -1,0 +1,122 @@
+/* .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.nav__bar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.my__detailsContainer {
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+.text__detail {
+  background-color: blue;
+  height: 50rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.my__name {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+  /* color: #ff4522; */
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.my__jobTitle {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.container p {
+  font-size: 2rem;
+}
+
+.my__location {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+}
+
+.experience__year {
+  font-size: 4.5rem;
+}
+
+.image__container {
+  background-color: greenyellow;
+  height: 55rem;
+  width: 50rem;
+  /* width: 50%; */
+  /* text-align: right; */
+  display: flex;
+  /* justify-content: flex-end; */
+  /* padding-left: 20rem; */
+  position: relative;
+}
+
+.image__shape {
+  background-color: tomato;
+  height: 100%;
+  width: 83%;
+  transform: rotate(-6deg);
+  border-radius: 1rem;
+  position: absolute;
+  top: 23px;
+  bottom: -23px;
+  left: -95px;
+  width: 75%;
+}
+
+.image {
+  /* background-color: violet; */
+  transform: rotate(7deg);
+  /* background-repeat: repeat; */
+  /* background-position: 50%; */
+  /* background-size: contain; */
+  z-index: 2;
+  /* border-radius: 1rem;
+    height: 100%; */
+  width: 80%;
+  border-radius: 1rem;
+  /* background-position: ; */
+}
+
+.image > div {
+  position: unset !important;
+}
+
+.image__component {
+  object-fit: cover;
+  width: 100%;
+  position: relative !important;
+  height: unset !important;
+  border-radius: 1rem;
+  scroll-behavior: fixed;
+}
+
+.second {
+  height: 100%;
+}
