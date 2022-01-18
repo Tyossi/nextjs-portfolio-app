@@ -1,29 +1,27 @@
 import Image from "next/image";
+import HomeIcon from "../public/icons/home-icon.svg";
+
 import styles from "../styles/WorkDisplay.module.css";
 
 export default function WorkDisplay() {
   return (
-    <div className={styles.FeaturedWork__component}>
+    <div className={styles.workDisplay__component}>
       <div className={styles.image}>
-        <Image
-          src="/nx1.JPG"
-          alt="project__image"
-          layout="fill"
-          className={styles.image__component}
-        />
+        <div className={styles.project__description}>
+          <p className={styles.project__descriptionText}>
+            <span className="composition__photo--project-description__text--heading">
+              SilverScreen
+            </span>
+            <br />
+            Is a React app which exemplifies the SPA power of React using
+            dynamic nested routes.
+          </p>
+        </div>
+        <div className={styles.tech__logo}>
+          <HomeIcon />
+        </div>
+        <Image src="/nx1.JPG" alt="project__image" width="550" height="350" />
       </div>
     </div>
-    //   <Image
-    //     src="/nx2.JPG"
-    //     alt="project__image"
-    //     layout="fill"
-    //     className={styles.image__component}
-    //   />
-    //   <Image
-    //     src="/nx3.JPG"
-    //     alt="project__image"
-    //     layout="fill"
-    //     className={styles.image__component}
-    //   />
   );
 }

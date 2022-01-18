@@ -7,7 +7,7 @@ export default function FeaturedWork() {
   return (
     <div className={styles.featured__container}>
       <div className={styles.FeaturedWork__contentBox}>
-        <p>Portfolio</p>
+        <p className={styles.featured__container__text}>Portfolio</p>
         <h1>Featured Work</h1>
         <WorkDisplay />
       </div>

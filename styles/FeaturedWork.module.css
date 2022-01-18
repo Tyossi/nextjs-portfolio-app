@@ -17,6 +17,6 @@
 .featured__container h1 {
   font-size: 3rem;
 }
-.featured__container p {
+.featured__container__text {
   font-size: 2rem;
 }

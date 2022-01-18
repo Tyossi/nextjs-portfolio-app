@@ -1,21 +1,55 @@
-.image > div {
-  position: unset !important;
-}
-
-.image__component {
-  object-fit: cover;
-  width: 10%;
-  position: relative !important;
-  height: unset !important;
-  border-radius: 1rem;
-  scroll-behavior: fixed;
-}
-
-.FeaturedWork__component {
+.workDisplay__component {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90%;
-  width: 80rem;
+  width: 100%;
   background-color: chartreuse;
+  position: relative;
+}
+
+.project__description {
+  position: absolute;
+  background-color: tomato;
+  border-radius: 0.4rem;
+  /* width: fit-content; */
+  text-align: center;
+  word-wrap: break-word;
+  width: 40%;
+  z-index: 2;
+  position: absolute;
+  top: -4rem;
+  left: -6rem;
+  padding: 1.5rem;
+  /* bottom: 0;
+  right: 0; */
+}
+
+.project__descriptionText {
+  font-size: 1.5rem;
+}
+
+.image {
+  position: relative;
+  background-color: yellow;
+  margin: auto;
+  z-index: 7;
+}
+
+.image:hover {
+}
+
+.image .tech__logo svg {
+  /* fill: var(--text-color); */
+
+  width: 7.5rem;
+  height: 5.5rem;
+  position: absolute;
+  z-index: 4;
+  top: -4%;
+  left: 90%;
+  right: 0;
+  background-color: violet;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
