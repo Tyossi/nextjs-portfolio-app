@@ -1,0 +1,58 @@
+.contact__container {
+  height: 100vh;
+  background: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__subContainer {
+  display: flex;
+  background-color: turquoise;
+  width: 75%;
+  height: 75%;
+  padding-bottom: 4rem;
+  margin-top: 5rem;
+}
+
+.contact__details {
+  background: gold;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__details p {
+  /* color: var(--text-color); */
+  font-size: 1.6rem;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  word-wrap: break-word;
+  font-weight: 400;
+}
+
+.contact__form__container {
+  background: violet;
+  width: 50%;
+}
+
+.contact__details h3 {
+  font-size: 3rem;
+}
+
+.contact__info {
+  display: flex;
+}
+.svg__styling {
+  width: 2rem;
+  fill: green;
+}
+
+.contact__infoText {
+  font-size: 2rem !important;
+}
+.contact__details span {
+  font-size: 1.8rem;
+}

@@ -4,7 +4,6 @@ import styles from "../../styles/NavBar.module.css";
 const NavItem = (props) => {
   const [open, setOpen] = useState(false);
 
-  console.log(open);
   return (
     <>
       <li className={styles.nav__item}>
