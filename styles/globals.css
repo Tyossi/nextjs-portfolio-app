@@ -6,6 +6,7 @@
   --border: 0.1rem solid #474a4d;
   --border-radius: 0.8rem;
   --speed: 500ms;
+  --text-animation: text-fill;
 }
 
 *,
@@ -45,4 +46,16 @@ ul {
 
 * {
   box-sizing: border-box;
+}
+
+@keyframes text-fill {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
