@@ -27,7 +27,7 @@ export default function Timeline() {
             timeline.buttonText !== "";
           return (
             <VerticalTimelineElement
-              key={timeline.key}
+              key={timeline.id}
               date={timeline.date}
               dateClassName="date"
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyle}

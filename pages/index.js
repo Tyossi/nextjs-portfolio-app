@@ -5,6 +5,7 @@ import FeaturedWork from "../components/FeaturedWork";
 import Skill from "../components/Skills/Skills";
 import Timeline from "../components/Timeline";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Skill />
       <Timeline />
       <Contact />
+      <Footer />
     </div>
   );
 }
