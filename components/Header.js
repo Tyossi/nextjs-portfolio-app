@@ -1,11 +1,23 @@
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 
 export default function Header() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMounted(true);
+    }, 1000);
+  });
   return (
-    <>
+    <div className={styles.header__container}>
       <div className={styles.my__detailsContainer}>
-        <div className={styles.text__detail}>
+        <div
+          className={
+            mounted ? styles.text__detailAnimated : styles.text__detail
+          }
+        >
           <p className={styles.my__name}>Toyosi Ogundairo</p>
           <h3 className={styles.my__jobTitle}>Frontend Developer</h3>
           <p className={styles.coverLetter__CTA}>Web Development</p>
@@ -16,20 +28,37 @@ export default function Header() {
             Experience
           </div>
         </div>
-        <div className={styles.image__container}>
-          <div className={styles.image__shape}></div>
-          <div className={styles.image}>
-            <Image
+        <div
+          className={
+            mounted ? styles.image__containerAnimated : styles.image__container
+          }
+        >
+          <div
+            className={
+              mounted ? styles.image__shapeRotate : styles.image__shape
+            }
+          />
+          <div
+            className={mounted ? styles.image__rotate : styles.image}
+            style={{
+              backgroundImage: "url(" + "/yossi.jpg" + ")",
+              backgroundPosition: "top top",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              borderRadius: "1rem",
+              maxWidth: "100%",
+            }}
+          >
+            {/* <Image
               src="/yossi.jpg"
               alt="Picture of the author"
               layout="fill"
               className={styles.image__component}
-            />
+            /> */}
           </div>
         </div>
       </div>
       <div className={styles.second}></div>
-    </>
-    // </div>
+    </div>
   );
 }
