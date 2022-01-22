@@ -6,12 +6,14 @@ import Skill from "../components/Skills/Skills";
 import Timeline from "../components/Timeline";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import HeaderTwo from "../components/HeaderTwo";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <NavBar />
-      <Header />
+      {/* <NavBar /> */}
+      {/* <Header /> */}
+      <HeaderTwo />
       <FeaturedWork />
       <Skill />
       <Timeline />

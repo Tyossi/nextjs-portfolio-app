@@ -11,7 +11,7 @@ export default function Header() {
     }, 1000);
   });
   return (
-    <div className={styles.header__container}>
+    <>
       <div className={styles.my__detailsContainer}>
         <div
           className={
@@ -42,11 +42,9 @@ export default function Header() {
             className={mounted ? styles.image__rotate : styles.image}
             style={{
               backgroundImage: "url(" + "/yossi.jpg" + ")",
-              backgroundPosition: "top top",
+              backgroundPosition: "top",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              borderRadius: "1rem",
-              maxWidth: "100%",
             }}
           >
             {/* <Image
@@ -54,11 +52,13 @@ export default function Header() {
               alt="Picture of the author"
               layout="fill"
               className={styles.image__component}
+              style={{ backgroundPosition: "top" }}
             /> */}
           </div>
         </div>
       </div>
       <div className={styles.second}></div>
-    </div>
+    </>
+    // </div>
   );
 }

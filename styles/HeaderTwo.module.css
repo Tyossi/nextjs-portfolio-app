@@ -1,0 +1,20 @@
+.header__container {
+  height: 100vh;
+  min-width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header__container > div {
+  width: 126.612px;
+  /* flex: 1; */
+  height: 120px;
+  background-color: orchid;
+}
+
+.header__container > div:nth-child(odd) {
+  background-color: palegreen;
+}
