@@ -7,6 +7,7 @@ import Timeline from "../components/Timeline";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import HeaderTwo from "../components/HeaderTwo";
+import AboutMe from "../components/AboutMe";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <NavBar /> */}
       {/* <Header /> */}
       <HeaderTwo />
+      <AboutMe />
       <FeaturedWork />
       <Skill />
       <Timeline />
