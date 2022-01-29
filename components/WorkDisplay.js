@@ -1,5 +1,11 @@
 import Image from "next/image";
 import HomeIcon from "../public/icons/home-icon.svg";
+import ReactIcon from "../public/icons/react-icon.svg";
+import HtmltIcon from "../public/icons/html-icon.svg";
+import FirebaseIcon from "../public/icons/firebase-icon.svg";
+import JavascriptIcon from "../public/icons/javascript-iconn.svg";
+import ReduxIcon from "../public/icons/redux-icon.svg";
+
 import Link from "next/link";
 import styles from "../styles/WorkDisplay.module.css";
 import { motion } from "framer-motion";
@@ -18,8 +24,52 @@ export default function WorkDisplay({ projects }) {
                 whileInView={{ scale: 0.95 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <div className={styles.tech__logo}>
-                  <HomeIcon className={styles.smooth__zigzag__animOne} />
+                <div className={styles.tech__logoOne}>
+                  <ReactIcon
+                  // className={
+                  //   project.id === "1"
+                  //     ? styles.smooth__zigzag__animOne
+                  //     : styles.smooth__zigzag__animThree
+                  // }
+                  />
+                </div>
+                <div
+                  className={
+                    project.id === "1"
+                      ? styles.tech__logoTwo
+                      : styles.tech__logoTwoFire
+                  }
+                >
+                  {project.id === "2" ? (
+                    <FirebaseIcon
+                    // className={
+                    //   project.id === "1"
+                    //     ? styles.smooth__zigzag__animOne
+                    //     : styles.smooth__zigzag__animThree
+                    // }
+                    />
+                  ) : (
+                    <HtmltIcon />
+                  )}
+                </div>
+                <div
+                  className={
+                    project.id === "1"
+                      ? styles.tech__logoThree
+                      : styles.tech__logoThreeRedux
+                  }
+                >
+                  {project.id === "2" ? (
+                    <ReduxIcon />
+                  ) : (
+                    <JavascriptIcon
+                    // className={
+                    //   project.id === "1"
+                    //     ? styles.smooth__zigzag__animOne
+                    //     : styles.smooth__zigzag__animThree
+                    // }
+                    />
+                  )}
                 </div>
                 <Image
                   src={`${project.image}`}

@@ -29,8 +29,8 @@ export default function Home({ project }) {
           transition={{ delay: 0.2 }}
           src={`${project.image}`}
           alt="project__image"
-          Height="auto"
-          Width="80%"
+          height="auto"
+          width="80%"
           className={styles.project__image}
         />
       </motion.div>

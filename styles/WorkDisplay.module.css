@@ -33,24 +33,89 @@
   border-radius: 0.4rem;
 }
 
-.image .tech__logo svg {
+.image .tech__logoOne svg {
   /* fill: var(--text-color); */
 
-  width: 7.5rem;
-  height: 5.5rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
   z-index: 4;
   top: -4%;
   left: 90%;
   right: 0;
-  background-color: violet;
+  background-color: rgb(97, 218, 251);
   padding: 1rem;
   border-radius: 0.5rem;
+  animation: smooth-zigzag-3 5s linear infinite;
 }
+.image .tech__logoTwo svg {
+  /* fill: var(--text-color); */
 
-.smooth__zigzag__animOne {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 4;
+  top: 94%;
+  left: 57%;
+  right: 0;
+  background-color: rgb(227, 76, 38);
+  fill: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  animation: smooth-zigzag-2 5s linear infinite;
+}
+.image .tech__logoTwoFire svg {
+  /* fill: var(--text-color); */
+
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 4;
+  top: 94%;
+  left: 57%;
+  right: 0;
+  background-color: #ffa611;
+  fill: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  animation: smooth-zigzag-2 5s linear infinite;
+}
+.image .tech__logoThree svg {
+  /* fill: var(--text-color); */
+
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: -6%;
+  right: 0;
+  fill: #fff;
+  background-color: rgb(240, 219, 79);
+  padding: 1rem;
+  border-radius: 0.5rem;
   animation: smooth-zigzag-1 5s linear infinite;
 }
+.image .tech__logoThreeRedux svg {
+  /* fill: var(--text-color); */
+
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: -6%;
+  right: 0;
+  fill: #fff;
+  background-color: #764abc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  animation: smooth-zigzag-1 5s linear infinite;
+}
+
+/* .smooth__zigzag__animOne {
+  animation: smooth-zigzag-1 5s linear infinite;
+} */
 
 @keyframes smooth-zigzag-1 {
   0%,
@@ -68,9 +133,9 @@
   }
 }
 
-.smooth-zigzag-anim-2 {
+/* .smooth__zigzag__animTwo {
   animation: smooth-zigzag-2 5s linear infinite;
-}
+} */
 
 @keyframes smooth-zigzag-2 {
   0%,
@@ -88,9 +153,9 @@
   }
 }
 
-.smooth-zigzag-anim-3 {
+/* .smooth__zigzag__animThree {
   animation: smooth-zigzag-3 5s linear infinite;
-}
+} */
 
 @keyframes smooth-zigzag-3 {
   0%,
