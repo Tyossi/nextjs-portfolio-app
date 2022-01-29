@@ -74,6 +74,12 @@
   flex-direction: row;
   height: 90%;
   width: 100%;
-  background-color: chartreuse;
-  position: relative;
+  /*  background-color: chartreuse;
+  /* position: relative; */
+}
+
+@media screen and (max-width: 63.75rem) {
+  .featured__container {
+    height: fit-content;
+  }
 }

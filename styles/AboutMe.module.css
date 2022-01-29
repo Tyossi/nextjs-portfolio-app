@@ -70,7 +70,7 @@
 .text__detail {
   position: relative;
   background-color: blue;
-  height: 50rem;
+  /* height: 50rem; */
   width: 50%;
   display: flex;
   justify-content: center;
@@ -133,10 +133,12 @@
   /* opacity: 1; */
 
   background-color: greenyellow;
+  margin-bottom: 5rem;
 
   /* opacity: 0; */
 }
 .image__containerAnimated {
+  margin-bottom: 5rem;
   background-color: greenyellow;
   max-width: 65%;
   text-align: right;
@@ -177,8 +179,8 @@
   transform: rotate(0deg);
   z-index: 2;
   border-radius: 10px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease-out;
+  /* -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease-out; */
   background-color: red;
 }
 .main__animated {
@@ -202,7 +204,8 @@
   position: absolute;
   top: 23px;
   bottom: -23px;
-  left: -95px;
+  left: -4.1rem;
+
   background-color: #ff4522;
 
   z-index: 1;
@@ -213,7 +216,7 @@
   position: absolute;
   top: 23px;
   /* bottom: -23px; */
-  left: -9.1rem;
+  /* left: -9.1rem; */
   width: 90%;
   transform: rotate(0deg);
   transition: all 0.4s ease;
@@ -330,7 +333,6 @@
     position: absolute;
     top: 23px;
     bottom: -23px;
-    left: -95px;
     background-color: #ff4522;
 
     z-index: 1;
@@ -339,7 +341,7 @@
     border-radius: 1rem;
     position: absolute;
     top: 23px;
-    left: -9.1rem;
+    left: -4.1rem;
     width: 90%;
     transform: rotate(0deg) !important;
     /* transition: all 0.4s ease; */
@@ -362,7 +364,7 @@
     position: relative;
     top: 0;
     /* opacity: 1; */
-
+    margin: 6rem 0;
     background-color: greenyellow;
 
     /* opacity: 0; */
@@ -371,10 +373,11 @@
     background-color: greenyellow;
     max-width: 100%;
     text-align: right;
-    /* padding-left: 151px; */
+    padding-left: 8.3px;
     position: relative;
     /* opacity: 1; */
     top: -20px;
+    margin: 6rem 0;
     /* visibility: visible; */
     /* transition: all 0.4s ease; */
   }
@@ -389,14 +392,45 @@
     flex-direction: column;
     /* top: 3%;
     height: 50rem; */
+    padding: 2rem;
   }
   .text__detailAnimated {
+    padding: 2rem;
     position: relative;
     background-color: blue;
     width: 100%;
     top: 0%;
     visibility: visible;
     opacity: 1;
-    transition: all 0.4s ease;
+    /* transition: all 0.4s ease; */
+  }
+  .my__detailsContainer {
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 32.6rem) {
+  .image__container {
+    padding-left: 8.53rem;
+  }
+  .my__detailsContainer {
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 28.8rem) {
+  .my__detailsContainer {
+    padding: 4rem 0;
+  }
+
+  .image__container {
+    padding-left: 0;
+  }
+
+  .image__shape {
+    display: none;
+  }
+  .image__shapeRotate {
+    display: none;
   }
 }

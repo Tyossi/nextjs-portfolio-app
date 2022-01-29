@@ -8,19 +8,35 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import HeaderTwo from "../components/HeaderTwo";
 import AboutMe from "../components/AboutMe";
+import { motion } from "framer-motion";
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
-    <div className={styles.container}>
-      {/* <NavBar /> */}
-      {/* <Header /> */}
-      <HeaderTwo />
-      <AboutMe />
-      <FeaturedWork />
-      <Skill />
-      <Timeline />
-      <Contact />
-      <Footer />
-    </div>
+    <motion.div
+      exit={{ opacity: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      <div className={styles.container}>
+        {/* <NavBar /> */}
+        {/* <Header /> */}
+        <HeaderTwo />
+        <AboutMe />
+        <FeaturedWork projects={projects} />
+        <Skill />
+        <Timeline />
+        <Contact />
+        <Footer />
+      </div>
+    </motion.div>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetch(`http://localhost:3000/api/projects`);
+  const projects = await res.json();
+
+  return {
+    props: { projects },
+  };
+};

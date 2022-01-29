@@ -1,9 +1,10 @@
 // import { useState, useRef, useMemo, useEffect } from "react";
 import VisibilitySensor from "react-visibility-sensor";
-import styles from "../styles/FeaturedWork.module.css";
 import WorkDisplay from "./WorkDisplay";
+import ProjectCarousel from "./ProjectCarousel";
+import styles from "../styles/FeaturedWork.module.css";
 
-export default function FeaturedWork() {
+export default function FeaturedWork({ projects }) {
   // const targetRef = useRef(null);
   // const [isVisible, setIsVisible] = useState(false);
 
@@ -48,7 +49,9 @@ export default function FeaturedWork() {
           }}
         </VisibilitySensor>
         <div className={styles.workDisplay__component}>
-          <WorkDisplay />
+          <WorkDisplay projects={projects} />
+
+          {/* <ProjectCarousel /> */}
         </div>
       </div>
     </div>

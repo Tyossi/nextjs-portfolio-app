@@ -1,15 +1,13 @@
 .project__description {
-  position: absolute;
   background-color: tomato;
   border-radius: 0.4rem;
   /* width: fit-content; */
   text-align: center;
   word-wrap: break-word;
-  width: 40%;
+  width: 20%;
   z-index: 2;
   position: absolute;
-  top: -4rem;
-  left: -6rem;
+
   padding: 1.5rem;
   /* bottom: 0;
   right: 0; */
@@ -20,11 +18,19 @@
 }
 
 .image {
-  position: relative;
-  background-color: #ffff00;
+  /* background-color: #ffff00; */
   margin: auto;
   display: flex;
   z-index: 7;
+}
+
+.project {
+  position: relative;
+  border-radius: 2rem;
+}
+
+.image__component {
+  border-radius: 0.4rem;
 }
 
 .image .tech__logo svg {
@@ -99,5 +105,11 @@
   }
   75% {
     transform: translate(-7px, -7px);
+  }
+}
+
+@media screen and (max-width: 63.75rem) {
+  .image {
+    flex-direction: column;
   }
 }
