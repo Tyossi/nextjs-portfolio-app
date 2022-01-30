@@ -1,6 +1,6 @@
 .skill__container {
-  height: 100vh;
-  background-color: grey;
+  height: 90vh;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,21 +9,26 @@
 .skillGauge__andText {
   display: flex;
   flex-direction: column;
-  background-color: turquoise;
+  /* background-color: turquoise; */
   width: 75%;
   height: 75%;
 }
 
+/* .circle__bar {
+  color: #fff;
+} */
+
 .skill__containerText {
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   width: fit-content;
 }
 
 .skill__containerText h1 {
   position: relative;
-  font-size: 3vw;
+  font-size: clamp(2rem, 4vw, 4rem);
+
   color: #252839;
-  -webkit-text-stroke: 0.3vw #383d52;
+  -webkit-text-stroke: 0.3vw #3f524b;
   text-transform: uppercase;
   width: fit-content;
   letter-spacing: 0.1rem;
@@ -36,11 +41,12 @@
   left: 0;
   width: 0%;
   height: 100%;
-  color: greenyellow;
+  color: #02ffb7;
   -webkit-text-stroke: 0vw #383d52;
-  border-right: 2px solid blue;
+  border-right: 2px solid #02ffb7;
   overflow: hidden;
-  font-size: 3vw;
+  font-size: clamp(2rem, 4vw, 4rem);
+
   text-transform: uppercase;
   animation: var(--text-animation) 2s linear;
 }
@@ -52,7 +58,7 @@
 .skill__circlesCon {
   width: 100%;
   height: 90%;
-  background-color: hotpink;
+  /* background-color: hotpink; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,3 +67,47 @@
 .circle__bar:not(:last-child) {
   margin-right: 6rem;
 }
+
+.skill {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 46.9rem) /* 750/16 = 46.9rem*/ {
+  .skill__container {
+    flex-direction: column;
+    height: fit-content;
+    padding: 5rem 0;
+  }
+  .skill__circlesCon {
+    flex-direction: column;
+  }
+
+  .circle__bar:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .circle__bar {
+    margin-top: 7rem;
+  }
+
+  .skill {
+    font-size: 1.5rem;
+  }
+
+  .skill__containerText p {
+    font-size: 1.3rem;
+  }
+}
+
+/* .CircularProgressbar-path {
+  stroke: red;
+}
+.CircularProgressbar-trail {
+  stroke: gray;
+}
+.CircularProgressbar__text {
+  fill: yellow;
+}
+.CircularProgressbar-background {
+  fill: green;
+} */

@@ -1,6 +1,6 @@
 import VisibilitySensor from "react-visibility-sensor";
 import styles from "../../styles/Skills.module.css";
-import "react-circular-progressbar/dist/styles.css";
+// import "react-circular-progressbar/dist/styles.css";
 import SkillCircleBar from "./SkillCircleBars";
 
 export default function Skill() {

@@ -18,7 +18,7 @@ export default function WorkDisplay({ projects }) {
           return (
             <Link href="/project/[id]" as={`/project/${project.id}`}>
               <motion.div
-                style={{ marginRight: "2rem", cursor: "pointer" }}
+                style={{ cursor: "pointer" }}
                 className={styles.project}
                 whileHover={{ scale: 1.0 }}
                 whileInView={{ scale: 0.95 }}

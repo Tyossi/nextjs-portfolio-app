@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   clear: both;
+  padding: 3rem 0;
   /* float: left; */
 }
 
@@ -11,16 +12,9 @@
   width: 100%;
 }
 
-.about__MeContentContainer > div {
-  /* flex: 1; */
-  background-color: chartreuse;
-}
-
 .about__image {
   background-color: cadetblue !important;
   border-radius: 50%;
-}
-.about__image > div {
 }
 
 .image__component {
@@ -28,13 +22,15 @@
   border: 1px solid #fff;
 }
 
-.about__container h1 {
-  font-size: 3rem;
+.about__header {
+  font-size: clamp(2rem, 4vw, 4rem);
+  text-align: center;
 }
 
-.about__container p {
+.about__headerSub {
   font-size: 1.6rem;
   font-weight: 500;
+  text-align: center;
 }
 
 /*  */
@@ -44,11 +40,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 .my__detailsContainer {
-  background-color: palegreen;
+  /* background-color: palegreen; */
   max-width: 1250px;
   width: 100%;
   margin-left: auto;
@@ -69,7 +65,7 @@
 
 .text__detail {
   position: relative;
-  background-color: blue;
+  /* background-color: blue; */
   /* height: 50rem; */
   width: 50%;
   display: flex;
@@ -79,7 +75,7 @@
 }
 .text__detailAnimated {
   position: relative;
-  background-color: blue;
+  /* background-color: blue; */
   width: 50%;
   top: 0%;
   visibility: visible;
@@ -90,13 +86,14 @@
 .my__name {
   display: inline-block;
   margin-bottom: 1.6rem;
+  color: #02ffb7;
   font-family: Poppins;
   font-weight: 500;
   font-size: 2rem;
 }
 
 .my__jobTitle {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 600;
   line-height: 1.4;
   text-transform: uppercase;
@@ -108,7 +105,7 @@
 }
 
 .my__location {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 600;
   line-height: 1.4;
   text-transform: uppercase;
@@ -130,16 +127,18 @@
   padding-left: 151px;
   position: relative;
   top: 0;
+  margin-top: 4rem;
   /* opacity: 1; */
 
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   margin-bottom: 5rem;
 
   /* opacity: 0; */
 }
 .image__containerAnimated {
+  margin-top: 4rem;
   margin-bottom: 5rem;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   max-width: 65%;
   text-align: right;
   padding-left: 151px;
@@ -181,10 +180,10 @@
   border-radius: 10px;
   /* -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease-out; */
-  background-color: red;
+  /* background-color: red; */
 }
 .main__animated {
-  background-color: red;
+  /* background-color: red; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -206,7 +205,7 @@
   bottom: -23px;
   left: -4.1rem;
 
-  background-color: #ff4522;
+  background-color: #02ffb7;
 
   z-index: 1;
   /* height: 100%; */
@@ -227,7 +226,7 @@
   top: 23px;
   bottom: -23px;
   left: -95px;
-  background-color: #ff4522;
+  background-color: #02ffb7;
   transform: rotate(-14deg);
   z-index: 1;
   opacity: 1;
@@ -313,7 +312,7 @@
   }
 
   .main__animated {
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -333,7 +332,7 @@
     position: absolute;
     top: 23px;
     bottom: -23px;
-    background-color: #ff4522;
+    /* background-color: #ff4522; */
 
     z-index: 1;
     opacity: 1;
@@ -365,12 +364,12 @@
     top: 0;
     /* opacity: 1; */
     margin: 6rem 0;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 
     /* opacity: 0; */
   }
   .image__containerAnimated {
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     max-width: 100%;
     text-align: right;
     padding-left: 8.3px;
@@ -384,7 +383,7 @@
 
   .text__detail {
     position: relative;
-    background-color: blue;
+    /* background-color: blue; */
     /* height: 50rem; */
     width: 100%;
     display: flex;
@@ -397,7 +396,7 @@
   .text__detailAnimated {
     padding: 2rem;
     position: relative;
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     top: 0%;
     visibility: visible;
@@ -420,7 +419,7 @@
 
 @media screen and (max-width: 28.8rem) {
   .my__detailsContainer {
-    padding: 4rem 0;
+    padding: 4rem 1.5rem;
   }
 
   .image__container {

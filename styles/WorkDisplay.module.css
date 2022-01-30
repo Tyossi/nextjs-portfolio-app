@@ -27,6 +27,7 @@
 .project {
   position: relative;
   border-radius: 2rem;
+  margin-right: 2rem;
 }
 
 .image__component {
@@ -176,5 +177,40 @@
 @media screen and (max-width: 63.75rem) {
   .image {
     flex-direction: column;
+  }
+
+  .project {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 56.25rem) /* 900/16 = 56.25rem*/ {
+  .image .tech__logoOne svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
+  }
+
+  .image .tech__logoTwo svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
+  }
+
+  .image .tech__logoTwoFire svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
+  }
+
+  .image .tech__logoThree svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
+  }
+
+  .image .tech__logoThreeRedux svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.3rem;
   }
 }

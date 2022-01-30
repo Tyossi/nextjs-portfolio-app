@@ -6,8 +6,8 @@ import styles from "../styles/AboutMe.module.css";
 export default function AboutMe() {
   return (
     <div className={styles.about__container}>
-      <h1>About Me</h1>
-      <span>Introducing Myself</span>
+      <h1 className={styles.about__header}>About Me</h1>
+      <p className={styles.about__headerSub}>Introducing Myself</p>
 
       <div className={styles.my__detailsContainer}>
         <div className={styles.my__detailsContent}>
@@ -28,12 +28,19 @@ export default function AboutMe() {
                     <p className={styles.coverLetter__CTA}>Web Development</p>
                     <h4 className={styles.my__location}>Based in Nigeria</h4>
                     <div className={styles.experience}>
-                      <h1 className={styles.experience__year}>2+</h1>Years of
-                      <br />
-                      Experience
+                      <h1 className={styles.experience__year}>2+</h1>
+                      <p>
+                        Years of
+                        <br />
+                        Experience
+                      </p>
                     </div>
                     <span>
-                      <p>
+                      <p
+                        style={{
+                          fontSize: "1.6rem",
+                        }}
+                      >
                         Experienced front end software Developer with a track
                         record of building web apps according to mordern best
                         practices. I am proficient in ReactJs, Javascript,
