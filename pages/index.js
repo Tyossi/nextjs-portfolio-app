@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import HeaderTwo from "../components/HeaderTwo";
 import AboutMe from "../components/AboutMe";
 import { motion } from "framer-motion";
+import Nav from "../components/Nav";
 
 export default function Home({ projects }) {
   return (
@@ -20,6 +21,7 @@ export default function Home({ projects }) {
       <div className={styles.container}>
         {/* <NavBar /> */}
         {/* <Header /> */}
+        <Nav />
         <HeaderTwo />
         <AboutMe />
         <FeaturedWork projects={projects} />

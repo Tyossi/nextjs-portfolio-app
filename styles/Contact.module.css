@@ -1,6 +1,6 @@
 .contact__container {
   height: 100vh;
-  background: tomato;
+  background: #303134;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,4 +89,29 @@
 }
 .contact__details span {
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 65rem) /* 1040/16 = 65rem */ {
+  .contact__container {
+    height: fit-content;
+  }
+  .contact__subContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5rem 3rem;
+  }
+
+  .contact__details {
+    width: 100%;
+  }
+
+  .contact__form__container {
+    width: 100%;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
 }

@@ -5,10 +5,12 @@ import TypescriptIcon from "../public/icons/typescript-icon.svg";
 import HtmltIcon from "../public/icons/html-icon.svg";
 import SasstIcon from "../public/icons/sass-icon.svg";
 import styles from "../styles/HeaderTwo.module.css";
+import Nav from "./Nav";
 
 const HeaderTwo = () => {
   return (
     <div className={styles.header__container}>
+      {/* <Nav /> */}
       <div className={styles.header__subContainer}>
         <div
           className={styles.header__textContainer}
