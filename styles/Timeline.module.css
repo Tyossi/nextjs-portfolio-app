@@ -1,32 +1,61 @@
 .timeline__container {
   background-color: cadetblue;
   color: black;
+  padding: 3rem 0;
+}
+
+.timeline__container > span {
+  font-size: 2rem;
+}
+
+.vertical-timeline-element-date {
+  font-size: 2rem;
+  color: gold;
 }
 
 .timelineContainer__title {
-  font-size: 5rem;
+  font-size: clamp(2rem, 4rem, 4vw);
   text-align: center;
+  margin: 5rem 0;
+  color: #fff;
 }
 
 .timeline__container h3 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 3rem, 3vw);
 }
 .timeline__container h5 {
   padding-top: 0.25em;
   font-size: 2rem;
 }
 .timeline__container p {
-  padding-top: 0.25em;
+  /* padding-top: 0.25em; */
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .timeline__contentBox {
-  padding: 3rem;
+  /* padding: 2rem; */
 }
 
-/* .workButton {
+.text {
+  font-size: 2rem;
 }
 
-.schoolButton {
-} */
+.button {
+  padding: 0.8rem;
+  font-size: 1.6rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  color: black;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 8%), 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+@media screen and (max-width: 73.5rem) /* 1176/16 = 73.5rem*/ {
+  .button {
+    width: fit-content;
+    font-size: 1.3rem;
+  }
+  .timeline__container p {
+    font-size: 1.3rem;
+  }
+}

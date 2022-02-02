@@ -5,7 +5,7 @@ import styles from "../styles/AboutMe.module.css";
 
 export default function AboutMe() {
   return (
-    <div className={styles.about__container}>
+    <div className={styles.about__container} id="aboutMe">
       <h1 className={styles.about__header}>About Me</h1>
       <p className={styles.about__headerSub}>Introducing Myself</p>
 
@@ -41,10 +41,10 @@ export default function AboutMe() {
                           fontSize: "1.6rem",
                         }}
                       >
-                        Experienced front end software Developer with a track
-                        record of building web apps according to mordern best
-                        practices. I am proficient in ReactJs, Javascript,
-                        NextJs, Typescript, VueJs, NodeJs, and googling.
+                        Experienced frontend developer with a track record of
+                        building web apps according to mordern best practices. I
+                        am proficient in ReactJs, Javascript, NextJs,
+                        Typescript, VueJs, NodeJs, CSS and Googling.
                       </p>
                     </span>
                   </div>

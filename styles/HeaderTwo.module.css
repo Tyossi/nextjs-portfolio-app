@@ -21,15 +21,24 @@
   text-align: center;
   padding: 30px 25px;
   max-width: 960px;
+  border-radius: 0.5rem;
   border: 1px solid #fff;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to top bottom,
+    #141414,
+    rgba(255, 255, 255, 0.178)
+  );
+  backdrop-filter: blur(2rem);
 }
 
 .header__text h1 {
   font-size: clamp(3rem, 8vw, 8rem);
-  line-height: 9rem;
   font-weight: 700;
+}
+
+.header__text span {
+  line-height: 3.8rem;
 }
 .header__text h2 {
   font-size: 1.8rem;

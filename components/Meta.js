@@ -15,7 +15,7 @@ const Meta = ({ title, keywords, description }) => {
 
 Meta.defaultProps = {
   title: "Toyosi",
-  Keyword: "developer, frontend, programming",
+  Keyword: "developer, frontend, programming, portfolio, front end",
   description: "Portfolio site",
 };
 

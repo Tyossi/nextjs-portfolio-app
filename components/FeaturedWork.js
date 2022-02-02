@@ -1,57 +1,26 @@
-// import { useState, useRef, useMemo, useEffect } from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import WorkDisplay from "./WorkDisplay";
-import ProjectCarousel from "./ProjectCarousel";
 import styles from "../styles/FeaturedWork.module.css";
 
 export default function FeaturedWork({ projects }) {
-  // const targetRef = useRef(null);
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // const callbackFunction = (entries) => {
-  //   const [entry] = entries;
-  //   setIsVisible(entry.isIntersecting);
-  // };
-
-  // const options = useMemo(() => {
-  //   return {
-  //     root: null,
-  //     rootMargin: "0px",
-  //     threshold: 0.3,
-  //   };
-  // }, []);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(callbackFunction, options);
-  //   const currentTarget = targetRef.current;
-  //   if (currentTarget) observer.observe(currentTarget);
-
-  //   return () => {
-  //     if (currentTarget) observe.unobserve(currentTarget);
-  //   };
-  // }, [targetRef, options]);
-
   return (
-    <div className={styles.featured__container}>
+    <div className={styles.featured__container} id="featuredWork">
       <div className={styles.featuredWork__contentBox}>
-        <p className={styles.featured__container__text}>Portfolio</p>
+        <p className={styles.featured__container__text}>Featured</p>
         <VisibilitySensor>
           {({ isVisible }) => {
             return (
               <h1
-                data-text="Featured Work"
-                // ref={targetRef}
+                data-text="Portfolio"
                 className={isVisible ? styles.animated__class : null}
               >
-                Featured Work
+                Portfolio
               </h1>
             );
           }}
         </VisibilitySensor>
         <div className={styles.workDisplay__component}>
           <WorkDisplay projects={projects} />
-
-          {/* <ProjectCarousel /> */}
         </div>
       </div>
     </div>

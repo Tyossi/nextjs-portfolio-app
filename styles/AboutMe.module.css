@@ -100,6 +100,10 @@
   margin-bottom: 25px;
 }
 
+.coverLetter__CTA {
+  font-size: 1.5rem;
+}
+
 .container p {
   font-size: 2rem;
 }
@@ -119,6 +123,10 @@
 
 .experience__year {
   font-size: 4.5rem;
+}
+
+.experience p {
+  font-size: 1.5rem;
 }
 
 .image__container {
@@ -364,6 +372,7 @@
     top: 0;
     /* opacity: 1; */
     margin: 6rem 0;
+    padding-left: 6.4rem;
     /* background-color: greenyellow; */
 
     /* opacity: 0; */

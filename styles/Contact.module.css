@@ -1,23 +1,24 @@
 .contact__container {
-  height: 100vh;
+  height: auto;
   background: #303134;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 14rem;
 }
 
 .contact__subContainer {
   display: flex;
-  background-color: turquoise;
+  /* background-color: turquoise; */
   width: 75%;
   height: 75%;
-  padding: 5rem 0;
+  padding: 5rem 5rem 14rem 5rem;
   /* margin-top: 5rem; */
 }
 
 .contact__details {
-  background: gold;
+  /* background: gold; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@
 }
 
 .contact__form__container {
-  background: violet;
+  /* background: violet; */
   width: 50%;
   display: flex;
   justify-content: center;
@@ -56,15 +57,28 @@
   padding: 1.5rem;
   margin-top: 3rem;
   border-radius: 0.4rem;
+  border: none;
 }
 
 .contact__form button {
   padding: 1.5rem;
   margin-top: 3rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: black;
+  font-weight: 700;
+  color: #02ffb7;
+  cursor: pointer;
 }
 
 .contact__details h3 {
-  font-size: 3rem;
+  position: relative;
+  font-size: clamp(2rem, 4vw, 4rem);
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #3f524b;
+  text-transform: uppercase;
+  width: fit-content;
+  letter-spacing: 0.1rem;
 }
 
 .contact__infoBox {
@@ -81,14 +95,34 @@
 }
 .svg__styling {
   width: 2rem;
-  fill: green;
+  fill: #02ffb7;
+  margin-right: 3rem;
 }
 
 .contact__infoText {
-  font-size: 2rem !important;
+  font-size: 2rem;
 }
 .contact__details span {
   font-size: 1.8rem;
+}
+
+.contact__details .animated__class::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #02ffb7;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 0px solid #02ffb7;
+  overflow: hidden;
+  font-size: clamp(2rem, 4vw, 4rem);
+
+  text-transform: uppercase;
+  animation: var(--text-animation) 3s;
+
+  /* animation-iteration-count: 1; */
 }
 
 @media screen and (max-width: 65rem) /* 1040/16 = 65rem */ {
@@ -113,5 +147,19 @@
 
   .contact__form {
     width: 100%;
+  }
+
+  .svg__styling {
+    width: 1.5rem;
+    fill: #02ffb7;
+    margin-right: 1rem;
+  }
+
+  .contact__details p {
+    font-size: 1.4rem;
+  }
+
+  .contact__details span {
+    font-size: 1.4rem;
   }
 }

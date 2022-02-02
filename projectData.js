@@ -3,15 +3,18 @@ export const projects = [
     id: "1",
     title: "SilverScreen",
     description:
-      "Silverscreen is a ReactJs cinema app built to explore the SPA power of ReactJs",
+      "Silverscreen Is a cinema app which exemplifies the SPA power of React using dynamic nested routes.",
     image: "/SC1_4.png",
-    liveLink: "https://thesilverscreen.netlify.app",
+    liveLink: "https://thesilverscreen.netlify.app/",
+    codeLink: "https://github.com/Tyossi/cinema-app",
   },
   {
     id: "2",
-    title: "SilverScreen2",
-    description: "React Project made with Sketch",
+    title: "Crwn Clothing",
+    description:
+      "Is a full-stack e-commerce website that is able to handle and integrate secure payments, routes, noSQL database, and OAuth.",
     image: "/cr4.jpg",
-    liveLink: "https://thesilverscreen.netlify.app",
+    liveLink: "https://crwn-clothingline.herokuapp.com/",
+    codeLink: "https://github.com/Tyossi/crwn-clothing",
   },
 ];

@@ -1,7 +1,7 @@
 .featured__container {
   height: 100vh;
   display: flex;
-  background-color: darkgray;
+  background-color: var(--bg2);
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
@@ -33,12 +33,14 @@
   height: 100%;
   color: #02ffb7;
   -webkit-text-stroke: 0vw #383d52;
-  border-right: 2px solid #02ffb7;
+  /* border-right: 2px solid #02ffb7; */
   overflow: hidden;
   font-size: clamp(2rem, 4vw, 4rem);
 
   text-transform: uppercase;
-  animation: var(--text-animation) 2s linear;
+  animation: var(--text-animation) 3s;
+
+  /* animation-iteration-count: 1; */
 }
 .featured__container__text {
   font-size: 2rem;

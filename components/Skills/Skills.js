@@ -6,7 +6,7 @@ import SkillCircleBar from "./SkillCircleBars";
 export default function Skill() {
   const score = 20;
   return (
-    <div className={styles.skill__container}>
+    <div className={styles.skill__container} id="skills">
       <div className={styles.skillGauge__andText}>
         <div className={styles.skill__containerText}>
           <p>Skills</p>

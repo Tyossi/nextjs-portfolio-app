@@ -1,10 +1,12 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import BackArrowIcon from "../../public/icons/backarrow-icon.svg";
 import Link from "next/link";
 import { fadeInUp } from "../../animations/animations";
 import { stagger } from "../../animations/animations";
 import styles from "../../styles/Project.module.css";
+import Meta from "../../components/Meta";
 
 export default function Home({ project }) {
   const router = useRouter();
@@ -18,6 +20,7 @@ export default function Home({ project }) {
       animate="animate"
       variants={stagger}
     >
+      <Meta title="Projects" />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -41,7 +44,9 @@ export default function Home({ project }) {
       >
         <Link href="/">
           <motion.div variants={fadeInUp} style={{ cursor: "pointer" }}>
-            <a className={styles.home__CTA}>Back to home</a>
+            <a className={styles.home__CTA}>
+              <BackArrowIcon /> Back to home
+            </a>
           </motion.div>
         </Link>
         <motion.div variants={fadeInUp}>
@@ -53,10 +58,12 @@ export default function Home({ project }) {
         </motion.div>
         <span className={styles.CTA__buttons}>
           <motion.div variants={fadeInUp}>
-            <a href={project.liveLink}>
+            <a href={project.liveLink} target="_blank">
               <button>View Live Demo</button>
             </a>
-            <button>View Code</button>
+            <a href={project.codeLink} target="_blank">
+              <button>View Code</button>
+            </a>
           </motion.div>
         </span>
       </motion.div>

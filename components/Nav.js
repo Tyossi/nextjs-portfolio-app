@@ -32,42 +32,42 @@ export default function Nav() {
       >
         <motion.div className={styles.inner__nav}>
           <ul>
-            <span className={styles.navItem}>
-              <HomeIcon className={styles.navIcon} />
-              <li>
-                <a href="#">Home</a>
-              </li>
-            </span>
-            <span className={styles.navItem}>
-              <AboutMeIcon className={styles.navIcon} />
-              <li>
-                <a href="#">About Me</a>
-              </li>
-            </span>
-            <span className={styles.navItem}>
-              <WorkIcon className={styles.navIcon} />
-              <li>
-                <a href="#">Featured Works</a>
-              </li>
-            </span>
-            <span className={styles.navItem}>
-              <SkillsIcon className={styles.navIcon} />
-              <li>
-                <a href="#">Skills</a>
-              </li>
-            </span>
-            <span className={styles.navItem}>
-              <TimelineIcon className={styles.navIcon} />
-              <li>
-                <a href="#">Timeline</a>
-              </li>
-            </span>
-            <span className={styles.navItem}>
-              <ContactIcon className={styles.navIcon} />
-              <li>
-                <a href="#">Contact Me</a>
-              </li>
-            </span>
+            <a href="#header" onClick={() => setShow(!show)}>
+              <span className={styles.navItem}>
+                <HomeIcon className={styles.navIcon} />
+                <li>Home</li>
+              </span>
+            </a>
+            <a href="#aboutMe" onClick={() => setShow(!show)}>
+              <span className={styles.navItem}>
+                <AboutMeIcon className={styles.navIcon} />
+                <li>About Me</li>
+              </span>
+            </a>
+            <a href="#featuredWork" onClick={() => setShow(!show)}>
+              <span className={styles.navItem}>
+                <WorkIcon className={styles.navIcon} />
+                <li>Featured Works</li>
+              </span>
+            </a>
+            <a href="#skills" onClick={() => setShow(!show)}>
+              <span className={styles.navItem}>
+                <SkillsIcon className={styles.navIcon} />
+                <li>Skills</li>
+              </span>
+            </a>
+            <a href="#timeline" onClick={() => setShow(!show)}>
+              <span className={styles.navItem}>
+                <TimelineIcon className={styles.navIcon} />
+                <li>Timeline</li>
+              </span>
+            </a>
+            <a href="#contact" onClick={() => setShow(!show)}>
+              <span className={styles.navItem}>
+                <ContactIcon className={styles.navIcon} />
+                <li>Contact Me</li>
+              </span>
+            </a>
           </ul>
         </motion.div>
       </motion.nav>

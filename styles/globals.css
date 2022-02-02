@@ -1,5 +1,6 @@
 :root {
   --bg: #242526;
+  --bg2: #060606;
   --bg-accent: #484a4d;
   --text-color: #dadce1;
   --nav-size: 8rem;
@@ -21,9 +22,11 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   background-color: #303134;
@@ -58,5 +61,89 @@ ul {
   70%,
   90% {
     width: 100%;
+  }
+}
+
+/*Vertical Timeline Global Styles*/
+
+.vertical-timeline--two-columns .vertical-timeline-element-content {
+  padding: 1rem 2rem 4rem 2rem;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 8%), 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+.vertical-timeline--two-columns
+  .vertical-timeline-element-content
+  .vertical-timeline-element-date {
+  font-size: 2rem;
+  width: 100%;
+  left: 124%;
+  top: 0px;
+  color: #fff;
+}
+
+.vertical-timeline-element-icon {
+  width: 6rem;
+  height: 6rem;
+}
+@media screen and (max-width: 73.5rem) /* 1176/16 = 73.5rem*/ {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    color: black;
+    left: 78%;
+    font-size: 1.5rem;
+    width: fit-content;
+  }
+  .vertical-timeline--two-columns .vertical-timeline-element-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.vertical-timeline-element-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.vertical-timeline-element-icon svg {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  height: 30;
+  position: relative;
+  left: 11%;
+  top: 11%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+@media screen and (max-width: 73.5rem) /* 1176/16 = 73.5rem*/ {
+  .vertical-timeline-element-icon svg {
+    height: 2.4rem;
+    width: 2.4rem;
+    display: block;
+    height: 30;
+    position: relative;
+    left: 16%;
+    top: 13%;
+    margin-left: -12px;
+    margin-top: -12px;
+  }
+}
+
+/*Circular Progress Bar Global Styles*/
+
+@media screen and (max-width: 46.9rem) /* 750/16 = 46.9rem*/ {
+  .Skills_circle__bar__X91I8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Skills_circle__bar__X91I8 svg {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

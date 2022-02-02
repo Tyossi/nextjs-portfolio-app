@@ -1,15 +1,12 @@
-import styles from "../styles/Home.module.css";
-import Header from "../components/Header";
-import NavBar from "../components/NavBar/Navbar";
 import FeaturedWork from "../components/FeaturedWork";
 import Skill from "../components/Skills/Skills";
 import Timeline from "../components/Timeline";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import HeaderTwo from "../components/HeaderTwo";
 import AboutMe from "../components/AboutMe";
 import { motion } from "framer-motion";
 import Nav from "../components/Nav";
+import styles from "../styles/Home.module.css";
 
 export default function Home({ projects }) {
   return (
@@ -19,8 +16,6 @@ export default function Home({ projects }) {
       animate={{ opacity: 1 }}
     >
       <div className={styles.container}>
-        {/* <NavBar /> */}
-        {/* <Header /> */}
         <Nav />
         <HeaderTwo />
         <AboutMe />
@@ -28,7 +23,6 @@ export default function Home({ projects }) {
         <Skill />
         <Timeline />
         <Contact />
-        <Footer />
       </div>
     </motion.div>
   );
