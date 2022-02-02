@@ -69,24 +69,13 @@ export default function AboutMe() {
                             : styles.image__shape
                         }
                       />
-                      {/* <div
-                      style={{
-                        backgroundImage: "url(" + "/yossi.jpg" + ")",
-
-                        backgroundPosition: "top",
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        transition: "all 0.4s ease",
-                        minWidth: "100%",
-                      }}
-                    /> */}
 
                       <Image
                         src="/yossi.jpg"
                         alt="Picture of the author"
                         width={300}
                         height={450}
-                        // layout="fill"
+                        priority
                         objectFit="cover"
                         quality={100}
                         className={styles.main}

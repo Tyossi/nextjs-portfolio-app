@@ -56,7 +56,7 @@ export default function Timeline() {
                 <a
                   href={`${timeline.url}`}
                   target={"_blank"}
-                  // target="#"
+                  rel="noreferrer"
                   className={styles.button}
                   style={{
                     backgroundColor: timeline.background,

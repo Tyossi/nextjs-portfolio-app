@@ -26,7 +26,6 @@ export default function Nav() {
       <motion.nav
         initial={{ x: 0, opacity: 0 }}
         animate={show ? { opacity: 1, x: 100 } : { x: -100, opacity: 0 }}
-        // variants={variants}
         transition={{ duration: 0.5 }}
         className={styles.nav__container}
       >
