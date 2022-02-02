@@ -18,7 +18,7 @@ const HeaderTwo = () => {
         >
           <div className={styles.header__text}>
             <h1>
-              <span>I'm Ọmọtόyọsὶ Dairo</span>
+              <span>I&apos;m Ọmọtόyọsὶ Dairo</span>
             </h1>
             <h2>Front End Developer in Nigeria</h2>
           </div>

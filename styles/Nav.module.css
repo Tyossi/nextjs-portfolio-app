@@ -83,9 +83,9 @@
   background-color: black;
   border-radius: 50%;
   outline: none;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
+  -ms-user-select: none; */
   animation: pulse 3s linear infinite;
 }
 
