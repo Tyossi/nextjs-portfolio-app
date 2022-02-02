@@ -58,10 +58,10 @@ export default function Home({ project }) {
         </motion.div>
         <span className={styles.CTA__buttons}>
           <motion.div variants={fadeInUp}>
-            <a href={project.liveLink} target={"_blank"} rel="noopener">
+            <a href={project.liveLink} target={"_blank"} rel="noreferrer">
               <button>View Live Demo</button>
             </a>
-            <a href={project.codeLink} target={"_blank"} rel="noopener">
+            <a href={`${project.codeLink}`} target={"_blank"} rel="noreferrer">
               <button>View Code</button>
             </a>
           </motion.div>
