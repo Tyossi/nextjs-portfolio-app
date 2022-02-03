@@ -1,25 +1,13 @@
-import { useRouter } from "next/router";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import BackArrowIcon from "../../public/icons/backarrow-icon.svg";
 import Link from "next/link";
 import { fadeInUp } from "../../animations/animations";
 import { stagger } from "../../animations/animations";
 import Meta from "../../components/Meta";
-import { projects } from "../../projectData";
 import styles from "../../styles/Project.module.css";
 import { server } from "../../config";
 
 const Project = ({ project }) => {
-  const router = useRouter();
-  const id = router.query.id;
-
-  console.log({ project });
-
-  // const filtered = projects.filter((project) => project.id === id);
-  // console.log(filtered[0]);
-  // console.log({ id });
-
   return (
     <motion.div
       className={styles.product__pageContainer}
@@ -82,7 +70,7 @@ const Project = ({ project }) => {
 export default Project;
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(`${server}${context.params.id}`);
+  const res = await fetch(`${server}/api/projects/${context.params.id}`);
   const project = await res.json();
 
   return {
@@ -91,17 +79,3 @@ export const getServerSideProps = async (context) => {
     },
   };
 };
-
-// export const getStaticPaths = async () => {
-//   const res = await fetch(`http://localhost:3000/api/projects/`);
-//   const projects = await res.json();
-
-//   const ids = projects.map((project) => project.id);
-
-//   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };

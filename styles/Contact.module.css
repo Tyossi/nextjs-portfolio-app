@@ -14,7 +14,6 @@
   width: 75%;
   height: 75%;
   padding: 5rem 5rem 14rem 5rem;
-  /* margin-top: 5rem; */
 }
 
 .contact__details {
@@ -23,11 +22,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* padding: 5rem 0; */
 }
 
 .contact__details p {
-  /* color: var(--text-color); */
   font-size: 1.6rem;
   line-height: 28px;
   letter-spacing: 0.2px;
@@ -118,11 +115,8 @@
   border-right: 0px solid #02ffb7;
   overflow: hidden;
   font-size: clamp(2rem, 4vw, 4rem);
-
   text-transform: uppercase;
   animation: var(--text-animation) 3s;
-
-  /* animation-iteration-count: 1; */
 }
 
 @media screen and (max-width: 65rem) /* 1040/16 = 65rem */ {

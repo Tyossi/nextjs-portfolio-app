@@ -1,4 +1,3 @@
-import { useEffect, useState, useRef, useMemo } from "react";
 import Image from "next/image";
 import VisibilitySensor from "react-visibility-sensor";
 import styles from "../styles/AboutMe.module.css";
@@ -80,7 +79,6 @@ export default function AboutMe() {
                         quality={100}
                         className={styles.main}
                       />
-                      {/* </div> */}
                     </div>
                   </div>
                 </>

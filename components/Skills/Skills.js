@@ -1,10 +1,8 @@
 import VisibilitySensor from "react-visibility-sensor";
 import styles from "../../styles/Skills.module.css";
-// import "react-circular-progressbar/dist/styles.css";
 import SkillCircleBar from "./SkillCircleBars";
 
 export default function Skill() {
-  const score = 20;
   return (
     <div className={styles.skill__container} id="skills">
       <div className={styles.skillGauge__andText}>

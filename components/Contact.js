@@ -1,4 +1,3 @@
-import LocationPin from "../public/icons/location-pin.svg";
 import PhoneIcon from "../public/icons/phone-icon.svg";
 import LocationIcon from "../public/icons/location-icon.svg";
 import EnvelopeIcon from "../public/icons/envelope-icon.svg";

@@ -1,16 +1,11 @@
 .project__description {
-  background-color: tomato;
   border-radius: 0.4rem;
-  /* width: fit-content; */
   text-align: center;
   word-wrap: break-word;
   width: 20%;
   z-index: 2;
   position: absolute;
-
   padding: 1.5rem;
-  /* bottom: 0;
-  right: 0; */
 }
 
 .project__descriptionText {
@@ -18,7 +13,6 @@
 }
 
 .image {
-  /* background-color: #ffff00; */
   margin: auto;
   display: flex;
   z-index: 7;
@@ -35,8 +29,6 @@
 }
 
 .image .tech__logoOne svg {
-  /* fill: var(--text-color); */
-
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -50,8 +42,6 @@
   animation: smooth-zigzag-3 5s linear infinite;
 }
 .image .tech__logoTwo svg {
-  /* fill: var(--text-color); */
-
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -66,8 +56,6 @@
   animation: smooth-zigzag-2 5s linear infinite;
 }
 .image .tech__logoTwoFire svg {
-  /* fill: var(--text-color); */
-
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -82,8 +70,6 @@
   animation: smooth-zigzag-2 5s linear infinite;
 }
 .image .tech__logoThree svg {
-  /* fill: var(--text-color); */
-
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -98,8 +84,6 @@
   animation: smooth-zigzag-1 5s linear infinite;
 }
 .image .tech__logoThreeRedux svg {
-  /* fill: var(--text-color); */
-
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -113,10 +97,6 @@
   border-radius: 0.5rem;
   animation: smooth-zigzag-1 5s linear infinite;
 }
-
-/* .smooth__zigzag__animOne {
-  animation: smooth-zigzag-1 5s linear infinite;
-} */
 
 @keyframes smooth-zigzag-1 {
   0%,
@@ -134,10 +114,6 @@
   }
 }
 
-/* .smooth__zigzag__animTwo {
-  animation: smooth-zigzag-2 5s linear infinite;
-} */
-
 @keyframes smooth-zigzag-2 {
   0%,
   100% {
@@ -153,10 +129,6 @@
     transform: translate(-10px, 5px);
   }
 }
-
-/* .smooth__zigzag__animThree {
-  animation: smooth-zigzag-3 5s linear infinite;
-} */
 
 @keyframes smooth-zigzag-3 {
   0%,

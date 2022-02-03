@@ -4,7 +4,6 @@ import "react-circular-progressbar/dist/styles.css";
 import styles from "../../styles/Skills.module.css";
 
 export default function SkillCircleBar() {
-  const score = 20;
   return (
     <div className={styles.skill__circlesCon}>
       <div className={styles.circle__bar}>
@@ -13,7 +12,6 @@ export default function SkillCircleBar() {
             const percentage = isVisible ? 98 : 0;
             return (
               <CircularProgressbar
-                // className={styles.CircularProgressbar__text}
                 value={percentage}
                 text={`${percentage}%`}
                 circleRatio={

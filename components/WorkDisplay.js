@@ -17,6 +17,8 @@ export default function WorkDisplay({ projects }) {
             <Link
               href="/project/[id]"
               as={`/project/${project.id}`}
+              scroll={false}
+              passHref
               key={project.id}
             >
               <motion.div

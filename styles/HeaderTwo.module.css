@@ -82,11 +82,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: skyblue; */
 }
 
 .tech__item svg {
-  /* height: 4rem; */
   width: 40%;
   fill: #fff;
 }
@@ -94,13 +92,3 @@
 .header__gridSubCon > div:nth-child(odd) {
   background-color: palegreen;
 }
-
-/* @media screen and (min-width: 77.8rem) {
-  .header__gridSubCon .tech__box {
-    width: 124.562px;
-  }
-} */
-/* @media screen and (max-width: 77.7rem) {
-  .header__gridSubCon > div {
-  }
-} */

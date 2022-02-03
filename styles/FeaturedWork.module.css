@@ -33,14 +33,10 @@
   height: 100%;
   color: #02ffb7;
   -webkit-text-stroke: 0vw #383d52;
-  /* border-right: 2px solid #02ffb7; */
   overflow: hidden;
   font-size: clamp(2rem, 4vw, 4rem);
-
   text-transform: uppercase;
   animation: var(--text-animation) 3s;
-
-  /* animation-iteration-count: 1; */
 }
 .featured__container__text {
   font-size: 2rem;
@@ -53,8 +49,7 @@
   flex-direction: row;
   height: 90%;
   width: 100%;
-  /*  background-color: chartreuse;
-  /* position: relative; */
+  /*  background-color: chartreuse;*/
 }
 
 @media screen and (max-width: 63.75rem) {

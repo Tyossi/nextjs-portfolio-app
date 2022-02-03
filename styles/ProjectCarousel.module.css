@@ -1,7 +1,3 @@
-.swiper-container {
-  /* width: 500px; */
-}
-
 .swiper-pagination {
   bottom: 0;
   padding-bottom: 10px;
@@ -20,7 +16,4 @@
   height: 100%;
   position: relative;
   transition-property: transform;
-}
-
-.swiper__container {
 }

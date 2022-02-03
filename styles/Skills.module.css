@@ -9,17 +9,11 @@
 .skillGauge__andText {
   display: flex;
   flex-direction: column;
-  /* background-color: turquoise; */
   width: 75%;
   height: 75%;
 }
 
-/* .circle__bar {
-  color: #fff;
-} */
-
 .skill__containerText {
-  /* background-color: lawngreen; */
   width: fit-content;
 }
 
@@ -43,7 +37,6 @@
   height: 100%;
   color: #02ffb7;
   -webkit-text-stroke: 0vw #383d52;
-  /* border-right: 2px solid #02ffb7; */
   overflow: hidden;
   font-size: clamp(2rem, 4vw, 4rem);
 

@@ -1,8 +1,3 @@
-import InfoIcon from "../public/icons/info-icon.svg";
-import HomeIcon from "../public/icons/home-icon.svg";
-import Link from "next/link";
-
-// import c from "clsx";
 import { timelineData } from "../timelineData";
 import {
   VerticalTimeline,
@@ -11,15 +6,8 @@ import {
 import styles from "../styles/Timeline.module.css";
 
 export default function Timeline() {
-  const workIconStyles = { background: "#06d5a0" };
-  const schoolIconStyle = { background: "#f9c74f" };
-
   return (
-    <div
-      className={styles.timeline__container}
-      //   className="vertical-timeline-element-content"
-      id="timeline"
-    >
+    <div className={styles.timeline__container} id="timeline">
       <h1 className={styles.timelineContainer__title}>Timeline</h1>
       <VerticalTimeline>
         {timelineData.flatMap((timeline) => {
@@ -30,7 +18,6 @@ export default function Timeline() {
             timeline.buttonText !== "";
           return (
             <VerticalTimelineElement
-              // className={styles.text}
               key={timeline.id}
               date={timeline.date}
               dateClassName="vertical-timeline-element-date"
@@ -40,7 +27,6 @@ export default function Timeline() {
                 justifyContent: "center",
                 alignItems: "center",
               }}
-              // icon={isWorkIcon ? <InfoIcon /> : <HomeIcon />}
               icon={timeline.icon}
             >
               <div className={styles.timeline__contentBox}>
