@@ -4,9 +4,9 @@ import NodeIcon from "../public/icons/nodejs-icon.svg";
 import TypescriptIcon from "../public/icons/typescript-icon.svg";
 import HtmltIcon from "../public/icons/html-icon.svg";
 import SasstIcon from "../public/icons/sass-icon.svg";
-import styles from "../styles/HeaderTwo.module.css";
+import styles from "../styles/Header.module.css";
 
-const HeaderTwo = () => {
+const Header = () => {
   return (
     <div className={styles.header__container} id="header">
       <div className={styles.header__subContainer}>
@@ -827,4 +827,4 @@ const HeaderTwo = () => {
   );
 };
 
-export default HeaderTwo;
+export default Header;

@@ -152,7 +152,7 @@
   }
 
   .project {
-    margin: 0;
+    margin: 5rem 0 0 0;
   }
 }
 @media screen and (max-width: 56.25rem) /* 900/16 = 56.25rem*/ {

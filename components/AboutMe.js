@@ -12,7 +12,6 @@ export default function AboutMe() {
         <div className={styles.my__detailsContent}>
           <VisibilitySensor>
             {({ isVisible }) => {
-              console.log(isVisible);
               return (
                 <>
                   <div

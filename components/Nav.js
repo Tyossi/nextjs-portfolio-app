@@ -13,9 +13,6 @@ import styles from "../styles/Nav.module.css";
 export default function Nav() {
   const [show, setShow] = useState(false);
 
-  console.log(show);
-  console.log("rendered");
-
   return (
     <>
       <motion.nav

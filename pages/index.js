@@ -2,7 +2,7 @@ import FeaturedWork from "../components/FeaturedWork";
 import Skill from "../components/Skills/Skills";
 import Timeline from "../components/Timeline";
 import Contact from "../components/Contact";
-import HeaderTwo from "../components/HeaderTwo";
+import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 import { motion } from "framer-motion";
 import Nav from "../components/Nav";
@@ -10,7 +10,6 @@ import styles from "../styles/Home.module.css";
 import { server } from "../config";
 
 export default function Home({ projects }) {
-  console.log({ projects });
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -19,7 +18,7 @@ export default function Home({ projects }) {
     >
       <div className={styles.container}>
         <Nav />
-        <HeaderTwo />
+        <Header />
         <AboutMe />
         <FeaturedWork projects={projects} />
         <Skill />
