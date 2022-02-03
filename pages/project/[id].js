@@ -5,12 +5,17 @@ import BackArrowIcon from "../../public/icons/backarrow-icon.svg";
 import Link from "next/link";
 import { fadeInUp } from "../../animations/animations";
 import { stagger } from "../../animations/animations";
-import styles from "../../styles/Project.module.css";
 import Meta from "../../components/Meta";
+import { projects } from "../../projectData";
+import styles from "../../styles/Project.module.css";
 
-export default function Home({ project }) {
+const Project = ({ project }) => {
   const router = useRouter();
   const id = router.query.id;
+
+  // const filtered = projects.filter((project) => project.id === id);
+  // console.log(filtered[0]);
+  // console.log({ id });
 
   return (
     <motion.div
@@ -42,7 +47,7 @@ export default function Home({ project }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <Link href="/">
+        <Link href="/" scroll={false} passHref>
           <motion.div variants={fadeInUp} style={{ cursor: "pointer" }}>
             <a className={styles.home__CTA}>
               <BackArrowIcon /> Back to home
@@ -69,8 +74,9 @@ export default function Home({ project }) {
       </motion.div>
     </motion.div>
   );
-}
+};
 
+export default Project;
 export const getStaticProps = async (context) => {
   const res = await fetch(
     `http://localhost:3000/api/projects/${context.params.id}`
