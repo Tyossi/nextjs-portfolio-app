@@ -8,6 +8,7 @@ import { stagger } from "../../animations/animations";
 import Meta from "../../components/Meta";
 import { projects } from "../../projectData";
 import styles from "../../styles/Project.module.css";
+import { server } from "../../config";
 
 const Project = ({ project }) => {
   const router = useRouter();
@@ -81,9 +82,7 @@ const Project = ({ project }) => {
 export default Project;
 
 export const getServerSideProps = async (context) => {
-  const res = await fetch(
-    `http://localhost:3000/api/projects/${context.params.id}`
-  );
+  const res = await fetch(`${server}${context.params.id}`);
   const project = await res.json();
 
   return {

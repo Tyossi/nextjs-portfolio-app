@@ -7,6 +7,7 @@ import AboutMe from "../components/AboutMe";
 import { motion } from "framer-motion";
 import Nav from "../components/Nav";
 import styles from "../styles/Home.module.css";
+import { server } from "../config";
 
 export default function Home({ projects }) {
   console.log({ projects });
@@ -30,7 +31,7 @@ export default function Home({ projects }) {
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`http://localhost:3000/api/projects`);
+  const res = await fetch(`${server}/api/projects`);
   const projects = await res.json();
 
   return {
