@@ -77,7 +77,7 @@ const Project = ({ project }) => {
 };
 
 export default Project;
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const res = await fetch(
     `http://localhost:3000/api/projects/${context.params.id}`
   );
@@ -90,16 +90,16 @@ export const getStaticProps = async (context) => {
   };
 };
 
-export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/projects/`);
-  const projects = await res.json();
+// export const getStaticPaths = async () => {
+//   const res = await fetch(`http://localhost:3000/api/projects/`);
+//   const projects = await res.json();
 
-  const ids = projects.map((project) => project.id);
+//   const ids = projects.map((project) => project.id);
 
-  const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+//   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
 
-  return {
-    paths,
-    fallback: false,
-  };
-};
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
