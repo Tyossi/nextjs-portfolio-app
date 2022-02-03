@@ -13,7 +13,7 @@ export const projects = [
     title: "Crwn Clothing",
     description:
       "Is a full-stack e-commerce website that is able to handle and integrate secure payments, routes, noSQL database, and OAuth.",
-    image: "/cr4.jpg",
+    image: "/cr4.png",
     liveLink: "https://crwn-clothingline.herokuapp.com/",
     codeLink: "https://github.com/Tyossi/crwn-clothing",
   },
