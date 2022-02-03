@@ -13,6 +13,8 @@ const Project = ({ project }) => {
   const router = useRouter();
   const id = router.query.id;
 
+  console.log({ project });
+
   // const filtered = projects.filter((project) => project.id === id);
   // console.log(filtered[0]);
   // console.log({ id });
@@ -77,6 +79,7 @@ const Project = ({ project }) => {
 };
 
 export default Project;
+
 export const getServerSideProps = async (context) => {
   const res = await fetch(
     `http://localhost:3000/api/projects/${context.params.id}`

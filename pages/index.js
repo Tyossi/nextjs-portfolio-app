@@ -9,6 +9,7 @@ import Nav from "../components/Nav";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ projects }) {
+  console.log({ projects });
   return (
     <motion.div
       exit={{ opacity: 0 }}
@@ -28,7 +29,7 @@ export default function Home({ projects }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(`http://localhost:3000/api/projects`);
   const projects = await res.json();
 
