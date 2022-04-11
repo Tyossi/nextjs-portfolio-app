@@ -40,7 +40,7 @@ export default function AboutMe() {
                         }}
                       >
                         Experienced frontend developer with a track record of
-                        building web apps according to mordern best practices. I
+                        building web apps according to modern best practices. I
                         am proficient in ReactJs, Javascript, NextJs,
                         Typescript, VueJs, NodeJs, CSS and Googling.
                       </p>
