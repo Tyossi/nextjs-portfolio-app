@@ -21,7 +21,9 @@ export default function AboutMe() {
                         : styles.text__detail
                     }
                   >
-                    <p className={styles.my__name}>Toyosi Ogundairo</p>
+                    <p className={styles.my__name}>
+                      Omotoyosi Stephen Ogundairo
+                    </p>
                     <h3 className={styles.my__jobTitle}>Frontend Developer</h3>
                     <p className={styles.coverLetter__CTA}>Web Development</p>
                     <h4 className={styles.my__location}>Based in Nigeria</h4>
@@ -39,7 +41,7 @@ export default function AboutMe() {
                           fontSize: "1.6rem",
                         }}
                       >
-                        Experienced frontend developer with a track record of
+                        Experienced Web Developer with a track record of
                         building web apps according to modern best practices. I
                         am proficient in ReactJs, Javascript, NextJs,
                         Typescript, VueJs, NodeJs, CSS and Googling.

@@ -46,10 +46,10 @@ const Project = ({ project }) => {
           </motion.div>
         </Link>
         <motion.div variants={fadeInUp}>
-          <h4>Project Description</h4>
+          <h4 style={{ marginBottom: "1.5rem" }}>Project Description</h4>
         </motion.div>
         <motion.div variants={fadeInUp}>
-          <h1>{project.title}</h1>
+          <h1 style={{ marginBottom: "1.5rem" }}>{project.title}</h1>
           <p>{project.description}</p>
         </motion.div>
         <span className={styles.CTA__buttons}>
@@ -57,9 +57,11 @@ const Project = ({ project }) => {
             <a href={project.liveLink}>
               <button>View Live Demo</button>
             </a>
-            <a href={`${project.codeLink}`}>
-              <button>View Code</button>
-            </a>
+            {project.codeLink && (
+              <a href={`${project.codeLink}`}>
+                <button>View Code</button>
+              </a>
+            )}
           </motion.div>
         </span>
       </motion.div>
