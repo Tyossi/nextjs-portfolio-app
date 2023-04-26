@@ -12,28 +12,40 @@ import ErrorIcon from "./public/icons/error-icon.svg";
 export const timelineData = [
   {
     id: 1,
-    title: "Frontend Developer",
-    location: "Abuja, Nigeria/Remote",
+    title: "Web Developer",
+    location: "Manchester, UK/Remote",
     description:
-      "After taking the time to put together some projects for my portfolio, I set out to working on the portfolio website itself. With the portfolio now ready, I proceeded to sending out applications. I had a couple of interviews and landed some offers including the one I took for my current role as a Front end developer at Hayok Medicare Limited.",
+      "At this point, I already have over 2 years professional experience from my previous and current role. I was excited by the prospect of transitioning into a fullstack developer and I have been able to do just that, building and learning cool stuffs in my current role as a web developer at Fezzant Ltd.",
 
     // buttonText: "View Frontend Project",
-    date: "July, 2021 - present",
-    icon: <JobIcon />,
-    background: "#1e1e56",
+    date: "Feb, 2022 - present",
+    icon: <JobIcon style={{ fill: "#1e1e56" }} />,
+    background: "rgb(255, 222, 244)",
   },
   {
     id: 2,
-    title: "Crwn Clothing",
-    // location: "Dragontail, Ascana",
+    title: "Frontend Developer",
+    location: "Abuja, Nigeria/Remote",
     description:
-      "Having worked with React for some time, I felt the need to get more insight into the inner workings of the framework and so I signed up for Andrei Naegoie's Complete React Developer Course on Udemy. After going through the course, I built my last portfolio project. It Is a full-stack e-commerce website that is able to handle and integrate secure payments, routes, noSQL database, and OAuth.",
-    buttonText: "Live Demo",
-    date: "February, 2021",
-    icon: <CrownIcon />,
-    url: "https://crwn-clothingline.herokuapp.com/",
-    background: "gold",
+      "After taking the time to put together some projects for my portfolio, I set out to working on the portfolio website itself. With the portfolio now ready, I proceeded to sending out applications. I had a couple of interviews and landed some offers including the one I took for my current role as a Frontend developer at Hayok Medicare Limited.",
+
+    // buttonText: "View Frontend Project",
+    date: "July, 2021 - Feb, 2023",
+    icon: <JobIcon />,
+    background: "#1e1e56",
   },
+  // {
+  //   id: 2,
+  //   title: "Crwn Clothing",
+  //   // location: "Dragontail, Ascana",
+  //   description:
+  //     "Having worked with React for some time, I felt the need to get more insight into the inner workings of the framework and so I signed up for Andrei Naegoie's Complete React Developer Course on Udemy. After going through the course, I built my last portfolio project. It Is a full-stack e-commerce website that is able to handle and integrate secure payments, routes, noSQL database, and OAuth.",
+  //   buttonText: "Live Demo",
+  //   date: "February, 2021",
+  //   icon: <CrownIcon />,
+  //   url: "https://crwn-clothingline.herokuapp.com/",
+  //   background: "gold",
+  // },
   {
     id: 3,
     title: "Silverscreen",
@@ -78,7 +90,7 @@ export const timelineData = [
     title: "Tutorial Hell",
     // location: "Dragontail, Ascana",
     description:
-      "At this point I had signed up for up to 4 different long hours Udemy courses to learn front end development, yet I never was able to step into the independent process of building personal projects from scratch. I found some really helpful YouTube channels and they helped me take the first steps towards getting out of tutorial purgatory.",
+      "At this point I had signed up for up to 4 different long hours Udemy courses to learn frontend development, yet I never was able to step into the independent process of building personal projects from scratch. I found some really helpful YouTube channels and they helped me take the first steps towards getting out of tutorial purgatory.",
 
     // buttonText: "View Frontend Project",
     date: "May, 2020",
@@ -103,7 +115,7 @@ export const timelineData = [
     title: "Reset Button",
     // location: "Dragontail, Ascana",
     description:
-      "Everything I had learnt until this point felt not solid enough and so I decided to restart my frontend developer journey the proper way. I picked up on HTML and CSS from the very basics, A month into learning, I built my first HTML and CSS(SASS) project.",
+      "Everything I had learnt until this point felt not solid enough and so I decided to restart my frontend developer journey the proper way. I picked up on HTML and CSS from the very basics. A month into learning, I built my first HTML and CSS(SASS) project.",
 
     buttonText: "Live Demo",
     date: "January, 2020",
@@ -128,7 +140,7 @@ export const timelineData = [
     title: "How it all started...",
     // location: ", Ascana",
     description:
-      "It is 2019, I was working as a teacher. A friend who is a developer had just higntened my interest on learning how to code and so I started my coding journey learning Python's Django framework.",
+      "It is 2019, I was working as a teacher. A friend who is a developer had just higntened my interest in learning how to code and so I started my coding journey learning Python's Django framework.",
 
     // buttonText: "View Frontend Project",
     date: "August, 2019",

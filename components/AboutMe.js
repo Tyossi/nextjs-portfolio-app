@@ -71,7 +71,7 @@ export default function AboutMe() {
                       />
 
                       <Image
-                        src="/yossi.jpg"
+                        src="/matrix.jpg"
                         alt="Picture of the author"
                         width={300}
                         height={450}
