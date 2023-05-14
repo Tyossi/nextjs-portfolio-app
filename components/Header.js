@@ -20,7 +20,7 @@ const Header = () => {
             <h1>
               <span>{"I'm"} Toyosi Dairo</span>
             </h1>
-            <h2>Front End Developer in Nigeria</h2>
+            <h2>Frontend Developer</h2>
           </div>
         </div>
         <div className={styles.header__gridContainer}>

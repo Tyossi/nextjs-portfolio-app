@@ -26,7 +26,7 @@ export default function AboutMe() {
                     </p>
                     <h3 className={styles.my__jobTitle}>Frontend Developer</h3>
                     <p className={styles.coverLetter__CTA}>Web Development</p>
-                    <h4 className={styles.my__location}>Based in Nigeria</h4>
+                    {/* <h4 className={styles.my__location}>Based in Nigeria</h4> */}
                     <div className={styles.experience}>
                       <h1 className={styles.experience__year}>2+</h1>
                       <p>

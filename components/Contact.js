@@ -52,16 +52,39 @@ export default function Contact() {
           {/* </div> */}
         </div>
         <div className={styles.contact__form__container}>
-          <form className={styles.contact__form}>
-            <input className={styles.input__field} placeholder="Name" />
-            <input className={styles.input__field} placeholder="Email" />
-            <input className={styles.input__field} placeholder="Message" />
+          <form
+            className={styles.contact__form}
+            action="https://formsubmit.co/toyosiogundairo@gmail.com"
+            method="POST"
+          >
+            <input
+              className={styles.input__field}
+              placeholder="Name"
+              type="text"
+              name="name"
+              required
+            />
+            <input
+              className={styles.input__field}
+              placeholder="Email"
+              type="email"
+              name="email"
+              required
+            />
+            <input
+              className={styles.input__field}
+              placeholder="Message"
+              type="text"
+              name="message"
+              required
+            />
             <button
               style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
               }}
+              type="submit"
             >
               Submit
               <PaperPlaneIcon className={styles.svg__styling} />
