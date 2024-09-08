@@ -15,25 +15,44 @@
 .image {
   margin: auto;
   display: flex;
-  z-index: 7;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
 }
 
 .project {
   position: relative;
   border-radius: 2rem;
-  margin-right: 2rem;
+  width: 52rem;
 }
 
 .image__component {
   border-radius: 0.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  min-width: unset !important;
+  max-width: unset !important;
+  min-height: unset !important;
+  max-height: unset !important;
 }
 
 .image .tech__logoOne svg {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   z-index: 4;
-  top: -4%;
+  top: 6%;
   left: 90%;
   right: 0;
   background-color: rgb(97, 218, 251);
@@ -42,11 +61,11 @@
   animation: smooth-zigzag-3 5s linear infinite;
 }
 .image .tech__logoTwo svg {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   z-index: 4;
-  top: 94%;
+  top: 88%;
   left: 57%;
   right: 0;
   background-color: rgb(227, 76, 38);
@@ -56,11 +75,11 @@
   animation: smooth-zigzag-2 5s linear infinite;
 }
 .image .tech__logoTwoFire svg {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   z-index: 4;
-  top: 94%;
+  top: 91%;
   left: 57%;
   right: 0;
   background-color: rgb(104, 160, 99);
@@ -70,8 +89,8 @@
   animation: smooth-zigzag-2 5s linear infinite;
 }
 .image .tech__logoThree svg {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   z-index: 4;
   top: 50%;
@@ -84,8 +103,8 @@
   animation: smooth-zigzag-1 5s linear infinite;
 }
 .image .tech__logoThreeRedux svg {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   z-index: 4;
   top: 50%;
@@ -146,43 +165,47 @@
   }
 }
 
-@media screen and (max-width: 63.75rem) {
-  .image {
-    flex-direction: column;
-  }
-
+@media screen and (max-width: 90rem) {
   .project {
-    margin: 5rem 0 0 0;
+    width: 36rem;
   }
-}
-@media screen and (max-width: 56.25rem) /* 900/16 = 56.25rem*/ {
   .image .tech__logoOne svg {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     padding: 0.3rem;
   }
 
   .image .tech__logoTwo svg {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     padding: 0.3rem;
   }
 
   .image .tech__logoTwoFire svg {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     padding: 0.3rem;
   }
 
   .image .tech__logoThree svg {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     padding: 0.3rem;
   }
 
   .image .tech__logoThreeRedux svg {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
     padding: 0.3rem;
   }
+}
+@media screen and (max-width: 63.75rem) {
+}
+
+@media screen and (max-width: 62.5rem) {
+  .image {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 56.25rem) /* 900/16 = 56.25rem*/ {
 }
