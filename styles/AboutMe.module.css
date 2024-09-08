@@ -82,7 +82,7 @@
   display: inline-block;
   margin-bottom: 1.6rem;
   color: #02ffb7;
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-weight: 500;
   font-size: 2rem;
 }
@@ -118,10 +118,12 @@
 
 .experience__year {
   font-size: 4.5rem;
+  margin-right: 1rem;
 }
 
 .experience p {
   font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .image__container {

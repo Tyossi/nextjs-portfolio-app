@@ -49,13 +49,16 @@ export default function WorkDisplay({ projects }) {
                 >
                   {project.id === "2" ? <ReduxIcon /> : <JavascriptIcon />}
                 </div>
+                {/* <div className={styles.image__component}> */}
                 <Image
                   src={`${project.image}`}
                   alt="project__image"
                   width="750"
                   height="450"
                   className={styles.image__component}
+                  style={{ height: "auto", width: "100%" }}
                 />
+                {/* </div> */}
               </motion.div>
             </Link>
           );

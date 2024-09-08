@@ -1,9 +1,9 @@
-import { projects } from "../../../projectData";
+import { projectsFullData } from "../../../fullProjectData";
 
 export default function handler(req, res) {
   const id = req.query.id;
 
-  const project = projects.filter((project) => project.id === id);
+  const project = projectsFullData.filter((project) => project.id === id);
   if (project.length > 0) {
     res.status(200).json(project[0]);
   } else {

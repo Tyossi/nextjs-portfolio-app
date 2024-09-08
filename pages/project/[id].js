@@ -5,6 +5,7 @@ import { fadeInUp } from "../../animations/animations";
 import { stagger } from "../../animations/animations";
 import Meta from "../../components/Meta";
 import styles from "../../styles/Project.module.css";
+import AnimatedButton from "../../components/AnimatedButton/AnimatedButton";
 import { server } from "../../config";
 
 const Project = ({ project }) => {
@@ -29,8 +30,8 @@ const Project = ({ project }) => {
           src={`${project.image}`}
           alt="project__image"
           height="auto"
-          width="80%"
-          className={styles.project__image}
+          width="100%"
+          // className={styles.project__image}
         />
       </motion.div>
       <motion.div
@@ -39,14 +40,17 @@ const Project = ({ project }) => {
         animate={{ opacity: 1 }}
       >
         <Link href="/" scroll={false} passHref>
-          <motion.div variants={fadeInUp} style={{ cursor: "pointer" }}>
+          <motion.div
+            variants={fadeInUp}
+            style={{ cursor: "pointer", marginBottom: "3rem" }}
+          >
             <a className={styles.home__CTA}>
               <BackArrowIcon /> Back to home
             </a>
           </motion.div>
         </Link>
         <motion.div variants={fadeInUp}>
-          <h4 style={{ marginBottom: "1.5rem" }}>Project Description</h4>
+          {/* <h4 style={{ marginBottom: "1.5rem" }}>Project Description</h4> */}
         </motion.div>
         <motion.div variants={fadeInUp}>
           <h1 style={{ marginBottom: "1.5rem" }}>{project.title}</h1>
@@ -54,8 +58,9 @@ const Project = ({ project }) => {
         </motion.div>
         <span className={styles.CTA__buttons}>
           <motion.div variants={fadeInUp}>
-            <a href={project.liveLink}>
-              <button>View Live Demo</button>
+            {/* <button>View Live Demo</button> */}
+            <a href={project.liveLink} target="#_blank">
+              <AnimatedButton text="Demo" />
             </a>
             {project.codeLink && (
               <a href={`${project.codeLink}`}>
