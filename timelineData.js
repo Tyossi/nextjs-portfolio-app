@@ -119,7 +119,7 @@ export const timelineData = [
       "After taking the time to put together some projects for my portfolio, I set out to working on the portfolio website itself. With the portfolio now ready, I proceeded to sending out applications. I had a couple of interviews and landed some offers including the one I took for my current role as a Frontend developer at Hayok Medicare Limited.",
 
     // buttonText: "View Frontend Project",
-    date: "July, 2021 - Feb, 2023",
+    date: "July, 2021 - Feb, 2022",
     icon: <JobIcon />,
     background: "#1e1e56",
   },

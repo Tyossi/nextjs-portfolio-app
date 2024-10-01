@@ -49,7 +49,7 @@ export default function SkillCircleBar() {
       <div className={styles.circle__bar}>
         <VisibilitySensor>
           {({ isVisible }) => {
-            const percentage = isVisible ? 88 : 0;
+            const percentage = isVisible ? 95 : 0;
             return (
               <CircularProgressbar
                 value={percentage}
@@ -90,7 +90,7 @@ export default function SkillCircleBar() {
       <div className={styles.circle__bar}>
         <VisibilitySensor>
           {({ isVisible }) => {
-            const percentage = isVisible ? 90 : 0;
+            const percentage = isVisible ? 88 : 0;
             return (
               <CircularProgressbar
                 value={percentage}
@@ -124,13 +124,13 @@ export default function SkillCircleBar() {
           }}
         </VisibilitySensor>
         <h1 style={{ textAlign: "center" }} className={styles.skill}>
-          CSS
+          NodeJs
         </h1>
       </div>
       <div className={styles.circle__bar}>
         <VisibilitySensor>
           {({ isVisible }) => {
-            const percentage = isVisible ? 70 : 0;
+            const percentage = isVisible ? 80 : 0;
             return (
               <CircularProgressbar
                 value={percentage}
