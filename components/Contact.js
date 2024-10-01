@@ -37,7 +37,7 @@ export default function Contact() {
           </span>
           <span className={styles.contact__info}>
             <PhoneIcon className={styles.svg__styling} />
-            <p className={styles.contact__infoText}>+234 07059549612</p>
+            <p className={styles.contact__infoText}>+234 07062377323</p>
           </span>
           <span className={styles.contact__info}>
             <EnvelopeIcon className={styles.svg__styling} />
